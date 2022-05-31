@@ -21,14 +21,14 @@ https://github.com/micrometre/website.git
 ```
 ##### 2. Change to the cloned repository.
 ```bash
-cd express
+cd webite
 ```
 ##### 3. Install node dependencies
 ```bash
-npm i
+yarn 
 ```
 ```bash
-npm run dev
+yarn dev
 ```
 Acsess
 - website/app via http://localhost:3000
@@ -56,6 +56,6 @@ make remove
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+ deploy your Next.js app  to  [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
