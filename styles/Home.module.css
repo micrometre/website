@@ -1,11 +1,57 @@
 .container {
-  border: 6px solid yellow;
+  padding:  1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0dd44f;
+
 }
 
-.blog-list {
+.main {
+  align-items: center;
+  border: 1px solid #0dd44f;
 }
 
-.blog-list a {
+
+.grid {
+  border: 1px solid #0dd44f;
+  display: flex;
 }
-.blog-card {
+
+.card {
+  border: 1px solid #0dd44f;
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
 }

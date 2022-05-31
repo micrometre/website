@@ -13,7 +13,6 @@ export default function Blog({ frontmatter, markdown }) {
           <title>{frontmatter.title}</title>
         </Head>
         <h1>{frontmatter.title}</h1>
-        <span>{frontmatter.date}</span>
         <Image
           width={350}
           height={140}
