@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Link from 'next/link';
 import styles from './Navbar.module.css'
 import Image from "next/image";
 import { socialdata } from "../../data/social-data";
@@ -15,24 +15,42 @@ export function NavBarSocial() {
     <>
       {socialdata.map((e, i) => {
         return (
-          <div className="socialdiv" key={i}>
-            {e.socialLinks.map((e, i) => {
-              return (
-                <a
-                  style={socialIconStyles}
-                  href={e.href}
-                  key={i}
-                  title={e.title}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="icons" key={i}>
-                    <e.icons className={socialIconStyles} />
-                  </span>
-                </a>
-              );
-            })}
-          </div>
+          <>
+            <div className="socialdiv" key={i}>
+              <>
+                <Link href="/">
+                  <a>
+                    <p style={{
+                      color: "#fff",
+                      backgroundColor: "#088413",
+                      fontSize: 17,
+                      fontWeight: "bold",
+                      lineHeight: 1,
+
+                    }}>
+                      MicrometreUK
+                    </p>
+
+                  </a>
+                </Link>
+              </>
+              {e.socialLinks.map((e, i) => {
+                return (
+                  <a
+                    style={socialIconStyles}
+                    href={e.href}
+                    key={i}
+                    title={e.title}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="icons" key={i}>
+                      <e.icons className={socialIconStyles} />
+                    </span>
+                  </a>
+                );
+              })}
+            </div></>
         );
       })}
       <style jsx>{`

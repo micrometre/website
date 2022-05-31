@@ -1,25 +1,19 @@
-import { FaFacebook, FaGem, FaBars, FaTwitter, FaInstagram, FaEnvelope } from 'react-icons/fa';
+import { FaFacebook, FaGem, FaBars, FaTwitter, FaInstagram, FaEnvelope, FaGithub, FaLinkedin, FaHome } from 'react-icons/fa';
 export const socialdata = [
   {
     socialLinks: [
       {
-        title: "Follow us on Facebook",
-        subtitle: "Facebook Icon",
-        href: "/",
-        icons: FaFacebook
+        title: " Github",
+        subtitle: "Github",
+        href: "https://github.com/micrometreuk",
+        icons: FaGithub
       },
       {
-        title: "Follow us on Instagram",
-        subtitle: "Instagram Icons",
+        title: "FaLinkedin",
+        subtitle: "FaLinkedin",
         href: "/",
-        icons: FaInstagram
+        icons: FaLinkedin
       },
-      {
-        title: "Follow us on twitter",
-        href: "/",
-        subtitle: "Twitter Icon",
-        icons: FaTwitter
-      }
     ],
   }
 ];

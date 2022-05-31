@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css'
 import Moto from "../components/Moto/Moto";
 import PageLayout from "../components/PageLayout ";
 import Navbar from "../components/Navbar/Navbar";
+import CopyRight from "../components/Copyright";
 export default function Home({ blogs }) {
   return (
     <div className={styles.container}>
@@ -30,6 +31,7 @@ export default function Home({ blogs }) {
             </div>
           ))}
         </div>
+      <CopyRight />
       </main>
       </PageLayout>
     </div>
