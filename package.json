@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "post": "./scripts/post.sh",
-    "page": "./scripts/page.sh",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 7999",
     "lint": "next lint"
   },
   "dependencies": {
