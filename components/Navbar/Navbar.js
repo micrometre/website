@@ -16,8 +16,7 @@ export function NavBarSocial() {
       {socialdata.map((e, i) => {
         return (
           <>
-            <div className="socialdiv" key={i}>
-              <>
+            <div className="socialdiv">
                 <Link href="/">
                   <a>
                     <p style={{
@@ -30,10 +29,8 @@ export function NavBarSocial() {
                     }}>
                       MicrometreUK
                     </p>
-
                   </a>
                 </Link>
-              </>
               {e.socialLinks.map((e, i) => {
                 return (
                   <a
