@@ -1,31 +1,58 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+![alt tag](public/images/workflow.png )
 
-First, run the development server:
-
+#### Dependencies
+- Nodejs
+- Nginx
+- Docker
+- Docker-compose
+- gray-matter
+- next
+- react
+- react-dom
+- react-icons
+- react-markdown
+- react-wavify
+- sharp
+#### 1. Clone the soure repository.
+```bash
+https://github.com/micrometre/website.git
+```
+##### 2. Change to the cloned repository.
+```bash
+cd express
+```
+##### 3. Install node dependencies
+```bash
+npm i
+```
 ```bash
 npm run dev
-# or
-yarn dev
+```
+Acsess
+- website/app via http://localhost:3000
+
+####  Run the Production server in docker
+
+**Step 1**: Clone  repo
+```bash
+ git clone https://github.com/micrometreuk/express
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Step 2**: Move into the directory start the docker containers
+```bash
+make start
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Acsess
+- website/app via http://localhost:9998
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+**Step 3**: To uninstall run
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+make remove
+```
 
 ## Deploy on Vercel
 
