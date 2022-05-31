@@ -5,10 +5,12 @@ import Link from "next/link";
 import styles from '../styles/Home.module.css'
 import Moto from "../components/Moto/Moto";
 import PageLayout from "../components/PageLayout ";
+import Navbar from "../components/Navbar/Navbar";
 export default function Home({ blogs }) {
   return (
     <div className={styles.container}>
       <PageLayout>
+      <Navbar />
       <Moto />
       <main className={styles.main}>
         <div className={styles.grid}>

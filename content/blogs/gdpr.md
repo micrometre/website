@@ -8,8 +8,7 @@ date: '31-05-22'
 tags:
   - Nextjs
   - Hosting
-excerpt: "We privately hosted servers . 
-"  
+excerpt: "We provide reliable, privately hosted servers"  
 ---
 
 
