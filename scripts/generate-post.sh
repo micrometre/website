@@ -38,6 +38,6 @@ tags:
 ####  $EMAIL_ADDRESS
 ####  $TWITTER
 ####  $FACEBOOK
-![alt text]($COMPANY_THUMBNAIL )
+$COMPANY_NAME
 
 EOF

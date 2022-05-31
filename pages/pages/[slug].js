@@ -22,7 +22,7 @@ export default function pages({ frontmatter, markdown }) {
 
 export async function getStaticProps({ params: { slug } }) {
   const fileContent = matter(
-    fs.readFileSync(`./content/blogs/${slug}.md`, "utf8")
+    fs.readFileSync(`./content/pages/${slug}.md`, "utf8")
   );
   let frontmatter = fileContent.data;
   const markdown = fileContent.content;
@@ -33,8 +33,7 @@ export async function getStaticProps({ params: { slug } }) {
 }
 
 export async function getStaticPaths() {
-  const filesInProjects = fs.readdirSync("./content/blogs");
-
+  const filesInProjects = fs.readdirSync("./content/pages");
   const paths = filesInProjects.map((file) => {
     const filename = file.slice(0, file.indexOf("."));
     return { params: { slug: filename } };

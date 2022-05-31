@@ -35,7 +35,6 @@ tags:
 ####  $MOBILE_PHONE_NUMBER
 ####  $EMAIL_ADDRESS
 ####  $TWITTER
-####  $FACEBOOK
-![alt text]($COMPANY_THUMBNAIL )
+$COMPANY_NAME
 
 EOF
