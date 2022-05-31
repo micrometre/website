@@ -4,9 +4,11 @@ import matter from "gray-matter";
 import Link from "next/link";
 import styles from '../styles/Home.module.css'
 import Moto from "../components/Moto/Moto";
+import PageLayout from "../components/PageLayout ";
 export default function Home({ blogs }) {
   return (
     <div className={styles.container}>
+      <PageLayout>
       <Moto />
       <main className={styles.main}>
         <div className={styles.grid}>
@@ -27,6 +29,7 @@ export default function Home({ blogs }) {
           ))}
         </div>
       </main>
+      </PageLayout>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import matter from "gray-matter";
 import Head from "next/head";
 import Image from "next/image";
-import Layout from "../../components/layout";
+import Layout from "../../components/PostLayout";
 
 export default function Blog({ frontmatter, markdown }) {
   return (
