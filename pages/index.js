@@ -2,12 +2,10 @@ import Image from "next/image";
 import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
-import Navbar from "../components/Navbar";
 export default function Home({ blogs }) {
   return (
     <div className="container">
       <main>
-        <Navbar />
         <h1 className="header">Tasks</h1>
         <div className="grid">
           {blogs.map((blog) => (

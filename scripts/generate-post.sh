@@ -1,9 +1,10 @@
 #!/bin/bash -xv
-NAME="Matt"
+NAVITEM="micrometre"
+NAME="micrometre"
 LAST_NAME="Tween"
 DATE="`date +%d`-`date +%m`-`date +%y`"
 DOMAIN_NAME="https://elmbridgepainting.com/"
-COMPANY_NAME="Elmbridge Painting and Decorating Services Ltd."
+COMPANY_NAME="blogs."
 COMPANY_LOGO=images/elmbridge.png
 COMPANY_THUMBNAIL=/public/images/elmbridge.png
 PHONE_NUMBER="01932 253753"
@@ -20,6 +21,7 @@ YOUTUBE=""
 #define the template.
 cat  << EOF
 ---
+navItem: '$NAVITEM'
 title: '$COMPANY_NAME'
 metaTitle: '$COMPANY_NAME'
 logoImage:   '$COMPANY_LOGO'

@@ -4,4 +4,4 @@ DATE="`date +%H`_`date +%M`_`date +%S`_`date +%d`_`date +%m`_`date +%y`.md"
 PORT=$1
 DOMAIN=$2
 
-./scripts/generate-post.sh 8080 domain.com > content/blogs/$DATE
+./scripts/generate-page.sh  > content/pages/$DATE
