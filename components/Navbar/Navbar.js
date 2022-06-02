@@ -30,11 +30,11 @@ export function NavBarPaths() {
     <>
       <Navbar expand="lg" bg="primary" variant="dark" style={HeaderContainer} >
         <Container fluid>
-          <Navbar.Brand href="/" style={HeaderLogo} >MicrometreUK</Navbar.Brand>
-          <Navbar.Brand href="https://github.com/micrometreuk" target="_blank"rel="noreferrer">
+          <Navbar.Brand  title="MicrometreUK Logo"  href="/" style={HeaderLogo} >MicrometreUK</Navbar.Brand>
+          <Navbar.Brand  title= "MicrometreUK on Github"  href="https://github.com/micrometreuk" target="_blank"rel="noreferrer">
             <FaGithub style={HeaderLinks} />
           </Navbar.Brand>
-          <Navbar.Brand href="/">
+          <Navbar.Brand  title= "Micrometre on Linkedin"  href="/" target="_blank"rel="noreferrer">
             <FaLinkedin style={HeaderLinks} />
           </Navbar.Brand>
         </Container>
