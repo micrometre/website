@@ -7,14 +7,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - Nginx
 - Docker
 - Docker-compose
-- gray-matter
-- next
-- react
-- react-dom
+- react-bootastrap
+- bootstrap
 - react-icons
 - react-markdown
 - react-wavify
-- sharp
 #### 1. Clone the soure repository.
 ```bash
 https://github.com/micrometre/website.git
