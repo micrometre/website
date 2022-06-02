@@ -9,6 +9,7 @@ const HeaderContainer = {
   right: 0,
   left: 0,
   marginTop: "0.0rem",
+  backgroundColor: "#0099FF",
 };
 const HeaderLogo = {
   fontSize: "1.68rem",
@@ -28,13 +29,13 @@ const HeaderLinks = {
 export function NavBarPaths() {
   return (
     <>
-      <Navbar expand="lg" bg="primary" variant="dark" style={HeaderContainer} >
+      <Navbar expand="lg" style={HeaderContainer} >
         <Container fluid>
-          <Navbar.Brand href="/" style={HeaderLogo} >MicrometreUK</Navbar.Brand>
-          <Navbar.Brand href="https://github.com/micrometreuk" target="_blank"rel="noreferrer">
+          <Navbar.Brand href="#home" style={HeaderLogo} >MicrometreUK</Navbar.Brand>
+          <Navbar.Brand href="#home">
             <FaGithub style={HeaderLinks} />
           </Navbar.Brand>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="#home">
             <FaLinkedin style={HeaderLinks} />
           </Navbar.Brand>
         </Container>

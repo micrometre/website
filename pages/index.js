@@ -11,28 +11,28 @@ export default function Home({ blogs }) {
   return (
     <div className={styles.container}>
       <PageLayout>
-      <Navbar />
-      <Moto />
-      <main className={styles.main}>
-        <div className={styles.grid}>
-          {blogs.map((blog) => (
-            <div key={blog.slug} className={styles.card}>
-              <Link href={`/blog/${blog.slug}`}>
-                <a>
-                  <h2>
-                    {blog.title}
-                    &rarr;</h2>
-                  <p>
-                    {blog.excerpt}
+        <Navbar />
+        <Moto />
+        <main className={styles.main}>
+          <div className={styles.grid}>
+            {blogs.map((blog) => (
+              <div key={blog.slug} className={styles.card}>
+                <Link href={`/blog/${blog.slug}`}>
+                  <a style={{color: "black",cursor: "pointer",fontSize: "1.1em",textDecoration: "none", }}>
+                    <h2>
+                      {blog.title}
+                      &rarr;</h2>
+                    <p>
+                      {blog.excerpt}
                     </p>
-                  <br />
-                </a>
-              </Link>
-            </div>
-          ))}
-        </div>
-      <CopyRight />
-      </main>
+                    <br />
+                  </a>
+                </Link>
+              </div>
+            ))}
+          </div>
+          <CopyRight />
+        </main>
       </PageLayout>
     </div>
   );

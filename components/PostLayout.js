@@ -5,9 +5,9 @@ export const siteTitle = "MicrometreUK Dedicated private servers built for your 
 export function PostLayout({ children }) {
   return (
     <>
-      <div className="section">
+      <div className="post-layout">
         <Head>
-          <link rel="icon" href="/images/logo.webp" />
+          <link rel="icon" href="/images/MicrometreUK.svg" />
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="theme-color" content="#ffffff" />
@@ -20,22 +20,9 @@ export function PostLayout({ children }) {
       <NavBarSocial />
       <main>{children}</main>
       <style jsx>{`
-      nav {
-        text-align: center;
-        box-shadow: 0 4px 8px 0 yellow;
-      }
-      nav a {
-        margin-right: 2px;
-        padding: 4px;
-        font-size: 2rem;
-      }
       main {
-        margin: 2rem;
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0 4px 8px 0 blue;
-        border: 2px solid green;
+        margin-top: 8rem;
+        padding: 1rem;
       }
     `}</style>
     </>

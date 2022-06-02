@@ -2,8 +2,8 @@
 navItem: 'micrometre'
 title: 'Non shared hosting'
 metaTitle: 'Non shared hosting for GDPR compliance.'
-logoImage:   'images/1.webp'
-socialImage: images/2.webp
+logoImage:   'images/MicrometreUK.svg'
+socialImage: images/MicrometreUK.svg
 date: '31-05-22'
 tags:
   - Nextjs

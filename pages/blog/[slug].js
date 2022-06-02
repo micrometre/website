@@ -13,14 +13,14 @@ export default function Blog({ frontmatter, markdown }) {
           <title>{frontmatter.title}</title>
         </Head>
         <h1>{frontmatter.title}</h1>
+        <ReactMarkdown>{markdown}</ReactMarkdown  >
+        <hr />
         <Image
-          width={350}
+          width={150}
           height={140}
           alt={frontmatter.title}
           src={`/${frontmatter.logoImage}`}
         />
-        <hr />
-        <ReactMarkdown>{markdown}</ReactMarkdown>
       </div>
     </Layout>
   );
